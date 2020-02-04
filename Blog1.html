@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+<style>
+	 body {
+			font-family: sans-serif;
+			margin: 18px auto;
+			max-width: 800px;
+			padding: 0 20px;
+			background-color: #ffffff
+		}
+		nav {
+			background: #696969;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			display: none;
+    }
+		nav.open {
+				display: block;
+		}
+		nav ul {
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			color: gray;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			display: inline-block;
+			padding: .95em;
+		}
+	</style>
+</head>
+<body>
+<nav id="pageNav">
+		<ul>
+			<li><a href="#" onclick="closeMenu()">x</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+	<a href="url"style=text-decoration:none  onclick="openMenu()">Menu</a>
+
+	<h1>Welcome to My Blog</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur.
+	  Minim ven, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+
+	<script>
+		function openMenu() {
+			document.getElementById('pageNav').className = 'open';
+		}
+		function closeMenu() {
+			document.getElementById('pageNav').className = '';
+		}
+	</script>
+</body>
+</html>
